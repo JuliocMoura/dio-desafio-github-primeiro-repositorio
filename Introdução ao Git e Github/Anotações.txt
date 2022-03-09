@@ -1,0 +1,58 @@
+GIT and GITHUB
+
+Comandos básicos para desempenho em terminal
+Windows:                                                   
+- cd 
+- dir
+- mkdir
+- del /rmdir
+
+Linux:
+- cd
+- ls
+- mkdir
+- rm -rf
+
+cd: Mudar o diretório atual
+dir: Exibir arquivos/diretórios do diretório atual.
+mkdir: Criar uma pasta.
+del: Deletar pasta.
+rmdir: Excluir diretório.
+cls: Limpar um terminal.
+
+Tópicos fundamentais para entender o funcionamento do Git
+
+1. Sha1
+2. Objetos fundamentais
+3. Sistema distribuído
+4. Segurança
+
+Sha1: A sigla SHA significa Secure Hash Algortihm, é um conjunto de funções hash criptográficas projetadas pela NSA (Agência de Segurança Nacional dos EUA). A encriptação gera um conjunto de caracteres identificador de 40 dígitos. Qualquer alteração num documento gera um novo conjunto.
+
+Objetos fundamentais: O Git é um sistema de arquivos de conteúdo endereçável. Isso significa que o coração do Git é um simples armazenamento chave-valor. Você pode inserir qualquer tipo de conteúdo nele, e ele lhe dará de volta uma chave que você pode usar para recuperar o conteúdo de volta em qualquer momento. Para demonstrar isso, você pode usar o comando de encanamento hash-object, que recebe alguns dados, armazena eles em seu diretório .git, e lhe devolve de volta a chave com o qual os dados são armazenados.
+             O Git armazena o conteúdo em uma maneira similar a um sistema de arquivos UNIX, porém um pouco simplificado. Todo o conteúdo é armazenado como objetos tree e blob, com as trees correspondendo a entradas de um diretório UNIX e blobs correspondendo mais ou menos a inodes ou conteúdos de arquivos. Um único objeto tree contém uma ou mais entradas, cada uma contendo uma referência SHA-1 para um blob ou subtree com seu modo, tipo e nome de arquivo associados.
+            Além do tree e blob, existe um outro objeto que armazena informações básicas que são úteis para o usuário, ele se chama commit. O formato para um objeto commit é simples: ele especifica a tree de nível mais alto para o snapshot do projeto neste ponto; a informação do autor/commiter (que usa as configurações user.name e user.email, além de um timestamp); uma linha em branco e então a mensagem de commit.
+
+(Esquematização de objetos fundamentais dentro do Git)
+
+Criando um Commit
+
+- git init: Criar um repositório
+- ls -a: Para exibir repositório dentro de um diretório.
+Dentro do arquivo onde foi criado um repositório, utilizar:
+- git config --global user.email "inserir seu e-mail"
+- git config --global user.name seu nickname
+
+após isso crie um documento dentro do arquivo e volte para o terminal
+
+- git add * (Staged)
+- git commit -m "commit inical (texto)" (commit)
+
+Ciclo de vida GIT INIT
+
+
+Criando um repositório 
+- git remote add origin "Link gerado pelo github"
+- git push origin master
+
+Resolvendo Conflitos
