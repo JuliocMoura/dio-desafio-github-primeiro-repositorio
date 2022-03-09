@@ -1,0 +1,23 @@
+Quando falamos em desenvolvimento web podemos ter duas vertentes: 
+-  Ambiente Cliente
+- Servidor
+
+O Client Side ou “Lado Cliente” são programas executados na máquina cliente, ou seja, os browsers são os responsáveis pela execução/interpretação das linguagens. (HTML, CSS, JavaScript e XML)
+
+O Server Side ou “Lado Servidor” são programas e instruções executadas em uma máquina servidor, é necessário um servidor, por exemplo, IIS da Microsoft, GlassFish e Apache que suportem os tipos de linguagens utilizadas, como ASPX, JSP e PHP. Essas linguagens são compiladas e gerados arquivos que somente os computadores podem interpretar. No servidor ainda podemos ter os bancos de dados que são softwares responsáveis por todo armazenamento de informações em estrutura de tabelas e relacionadas entre si. (PHP, JSP, ASPX e Banco de Dados, como MySQL, Oracle, SQLServer)
+
+O que é o HTML?
+
+Um documento HTML é um documento texto que pode ser produzido utilizando qualquer editor de texto. O conteúdo HTML de uma página é processado por um Navegador (Internet Explorer, Chrome etc.) 
+O HTML define um conjunto de elementos para a marcação de uma página Web: cabeçalho, parágrafo, lista, tabelas, entre outros. Cada elemento possui sua função específica e são comumente chamados de tag (marca ou marcadores).
+
+TAGS
+
+Todo documento HTML possui marcadores, conhecidos e chamados como tags , que são palavras inseridas entre os parênteses angulares (< e >), esses marcadores são os comandos de formatação da linguagem. Um elemento é formado por um nome de marcador (tag), atributos, valores e filhos.
+
+Estrutura Básica de um Documento
+
+Existem vários marcadores, mas para se construir uma página é essencial e recomendado que as seguintes tags estejam inseridas no documento. Os marcadores básicos são: 
+- <html> : define o início de um documento HTML e indica ao navegador que todo conteúdo posterior deve ser tratado como uma série de códigos HTML. 
+- <head>: define o cabeçalho de um documento HTML, que traz informações sobre o documento que está sendo aberto. 
+- <body> : define o conteúdo principal, o corpo do documento. Esta é a parte do documento HTML que é exibida no navegador. No corpo podem-se definir atributos comuns a toda a página, como cor de fundo, margens, e outras formatações.
